@@ -23,8 +23,8 @@ function LoginPage(){
               </form>
   
               <div class="mt-3 text-center">
-                <a href="html/login.html">¿No tienes cuenta? Regístrate</a><br />
-                <a href="html/recuperar_contraseña.html">¿Olvidaste tu contraseña?</a>
+                <a href="/register">¿No tienes cuenta? Regístrate</a><br />
+                <a href="/forgot">¿Olvidaste tu contraseña?</a>
               </div>
             </div>
           </div>
