@@ -74,7 +74,6 @@ return(
               <option value="">Seleccione el Sexo</option>
               <option value="masculino">Masculino</option>
               <option value="femenino">Femenino</option>
-              <option value="otro">Otro</option>
             </select>
           </div>
 
