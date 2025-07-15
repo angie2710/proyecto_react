@@ -1,31 +1,31 @@
-
+import './App.css';
 import LoginPage from './Pages/LoginPage/LoginPages';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RegisterPage from './RegisterPage/RegisterPage';
-import ForgotPaswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
+import ForgotPasswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
 import DashboardPage from './Pages/DashboardPage/DashboardPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-//#######
-import MyComponent from './Pages/Playground/Playground ';
-import MensajeCambio from './Pages/Playground/UseEffect';
-import ClickTracker from './Pages/Playground/UseRef';
-import DobleMemo from './Pages/Playground/UseMemo';
-import BotonConsola from './Pages/Playground/useCallback';
-function App(){
+import NotFoundPage from './Pages/components/NotFoundPage';
+import ProtectedRoute from './Pages/components/ProtecetedRoute';
+
+function App() {
   return (
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={<LoginPage />} />
-    <Route path="/register" element={<RegisterPage />} />
-    <Route path="/forgot" element={<ForgotPaswordPage />} />
-    <Route path="/dashboard" element={<DashboardPage />} />
-
-    <Route path="/MyComponent" element={<MyComponent/>} />
-    <Route path="/Contador" element={<MensajeCambio/>} />
-    <Route path="/click" element={<ClickTracker/>} />
-    <Route path="/doble" element={<DobleMemo/>} />
-    <Route path="/boton" element={<BotonConsola/>} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forgot" element={<ForgotPasswordPage />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;

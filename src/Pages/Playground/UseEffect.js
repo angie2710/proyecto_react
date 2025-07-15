@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function MensajeCambio() {
+function UseEffect() {
   const [nombre, setNombre] = useState('');
 
   // Se ejecuta cada vez que cambia "nombre"
@@ -21,5 +21,5 @@ function MensajeCambio() {
   );
 }
 
-export default MensajeCambio;
+export default UseEffect;
 

@@ -1,0 +1,25 @@
+/* Fondo de pantalla completo */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/public/descarga.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+ 
+  .card, .card-shadow {
+    background-color:  transparent !important;
+}
+
+.card-body{
+    /*opacity: 0.5;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 16px 32px !important;
+    border-radius: 6px;
+}
+
+.my-tittle {
+    font-family: 'Times New Roman', Times, serif;
+}
