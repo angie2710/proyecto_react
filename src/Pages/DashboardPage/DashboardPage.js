@@ -1,8 +1,9 @@
 import React from "react";
 import { signOut } from "firebase/auth";
-import { auth } from "../../fire";
+import { auth } from "../../firebase.js";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import './DashboardPage.css'
 
 function Dashboardpage() {
   const navigate = useNavigate();
@@ -98,6 +99,7 @@ function Dashboardpage() {
       <nav style={styles.navbar}>
         <div style={styles.logo}>LOGO</div>
         <div style={styles.navLinks}>
+          
           <a href="#" style={{ ...styles.link, ...styles.activeLink }}>
             Inicio
           </a>
@@ -124,6 +126,8 @@ function Dashboardpage() {
     gap: "8px",
   }}
 >
+
+
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

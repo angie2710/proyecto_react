@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import Spinner from './Spinner';
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
-import { auth } from '../../fire';
+import { auth } from '../../firebase.js';
 
 function ProtectedRoute({ children }) {
   const [user, loading] = useAuthState(auth);
