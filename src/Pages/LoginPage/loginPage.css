@@ -1,13 +1,4 @@
-/* Fondo de pantalla completo */
-body {
-    margin: 0;
-    padding: 0;
-    background: url('/public/descarga.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
- 
+
   .card, .card-shadow {
     background-color:  transparent !important;
 }

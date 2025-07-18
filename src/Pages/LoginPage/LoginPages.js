@@ -113,7 +113,15 @@ function LoginPage() {
         <div className="col-md-6">
           <div className="card shadow-lg">
             <div className="card-body">
-              <h3 className="card-title text-center mb-4"> Bienvenido</h3>
+            <img
+  src="/logo.png"
+  alt="Logo"
+  width="110"
+  height="110"
+  style={{ display: 'block', margin: '0 auto' }}
+/>
+
+
 
               <form onSubmit={handleSubmit} id="loginForm">
               <div className="mb-3">

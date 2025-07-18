@@ -100,14 +100,18 @@ function DashboardPage() {
     <div className='gradient'>
       {/* Header */}
       <header className="p-3 border-bottom">
-        <div className="container">
+        <div className="containerl">
           <nav className="navbar">
             <div className="container-fluid">
               {/* ✅ Corregido: Link con to="/" en lugar de <a> */}
-              <Link to="/" className="navbar-brand">Ico</Link>
+              <Link to="/" className="navbar-brand">
+  <img src="/logo.png" alt="Logo" width="60"  height="60"/>
+</Link>
+
               <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-                <button className="btn btn-outline-success" type="submit">Buscar</button>
+                <button class="btn btn-outline-success text-white">Guardar</button>
+
               </form>
               <button onClick={handleLogout} className="btn btn-primary">Cerrar Sesión</button>
             </div>
