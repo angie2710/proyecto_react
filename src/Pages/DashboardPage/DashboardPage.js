@@ -110,7 +110,7 @@ function DashboardPage() {
 
               <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-                <button class="btn btn-outline-success text-white">Guardar</button>
+                <button className="btn btn-outline-success text-white">Guardar</button>
 
               </form>
               <button onClick={handleLogout} className="btn btn-primary">Cerrar Sesión</button>
